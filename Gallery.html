@@ -1,43 +1,100 @@
+<!-- Gallery Page -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
   <head>
-    <title>Garden Indian Restaurant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Gallery - Garden Indian Restaurant</title>
   </head>
   <body>
-    <h1 align="center">Garden Indian Restaurant</h1>
-    <p align="center"><img src="TheGardenLarge.jpg" height="400px"></p>
-    <table align="center" width="80%">
-      <tr><td><a href="Home.html">Home</a></td>
-        <td><a href="About.html">About</a></td>
-        <td><a href="LunchMenu.html">Lunch Menu</a></td>
-        <td><a href="DinnerMenu.html">Dinner Menu</a></td>
-        <td><a href="TakeAwayMenu.html">Take Away Menu</a></td>
-        <td><a href="Bookings.html">Bookings</a></td>
-        <td><a href="Gallery.html">Gallery</a></td>
-            </tr></table>
-    <h2 align="center">Gallery</h2>
-    <div>
-      <p><img src="images/TheGarden1.jpg" width="400px">
-         <img src="images/TheGarden2.jpg" width="400px">
-         <img src="images/TheGarden3.jpg" width="400px">
-         <img src="images/TheGarden4.jpg" width="400px">
-         <img src="images/TheGarden5.jpg" width="400px">
-         <img src="images/TheGarden6.jpg" width="400px"></p>
-    </div>
-    <div>
-    <p align="center"><img src="images/vegetable-samosas.jpg" width="400px"><br>Vegetable Samosa</p>
-    <p align="center"><img src="images/hara-bhara-kebab.jpg" width="400px"><br>Hara Bhara Kebab</p>
-    <p align="center"><img src="images/chicken-tikka-masala.jpg" width="400px"><br>Chicken Tikka Masala</p>
-    <p align="center"><img src="images/chicken-vindaloo.jpg" width="400px"><br>Chicken Vindaloo</p>
-    <p align="center"><img src="images/lamb-madras.jpg" width="400px"><br>Lamb Madras</p>
-    <p align="center"><img src="images/lamb-rogan-josh.jpg" width="400px"><br>Lamb Rogan Josh</p>
-    <p align="center"><img src="images/beef-korma.jpg" width="400px"><br>Beef Korma</p>
-    <p align="center"><img src="images/beef-pepper-fry.jpg" width="400px"><br>Beef Pepper Fry</p>
-    <p align="center"><img src="images/goan-fish-curry.jpg" width="400px"><br>Goan Fish Curry</p>
-    <p align="center"><img src="images/prawn-malabari.jpg" width="400px"><br>Prawn Malabari</p>
-    <p align="center"><img src="images/dal-makhani.jpg" width="400px"><br>Dal Makhani</p>
-    <p align="center"><img src="images/vegetable-jalfrezi.jpg" width="400px"><br>Vegetable Jalfrezi</p>
-
-  </div>
+    <header>
+      <h1>Garden Indian Restaurant</h1>
+      <img src="images/TheGarden2.jpg" alt="Garden Indian Restaurant" class="gallery-header-image">
+      <!-- Nav Bar -->
+      <nav>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="LunchMenu.html">Lunch Menu</a></li>
+          <li><a href="DinnerMenu.html">Dinner Menu</a></li>
+          <li><a href="TakeAwayMenu.html">Take Away Menu</a></li>
+          <li><a href="Bookings.html">Bookings</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+  </header>
+    <main>
+      <!-- Gallery content -->
+      <div class="inside-main">
+        <h2 class="text-center">Gallery</h2>
+        <!-- Food images with descriptions -->
+        <section class="gallery-container">
+          <div class="gallery-item">
+            <img src="images/vegetable-samosas.jpg" alt="Vegetable Samosa">
+            <p>Vegetable Samosa</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/hara-bhara-kebab.jpg" alt="Hara Bhara Kebab">
+            <p>Hara Bhara Kebab</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/chicken-tikka-masala.jpg" alt="Chicken Tikka Masala">
+            <p>Chicken Tikka Masala</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/chicken-vindaloo.jpg" alt="Chicken Vindaloo">
+            <p>Chicken Vindaloo</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/lamb-madras.jpg" alt="Lamb Madras">
+            <p>Lamb Madras</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/lamb-rogan-josh.jpg" alt="Lamb Rogan Josh">
+            <p>Lamb Rogan Josh</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/beef-korma.jpg" alt="Beef Korma">
+            <p>Beef Korma</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/beef-pepper-fry.jpg" alt="Beef Pepper Fry">
+            <p>Beef Pepper Fry</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/goan-fish-curry.jpg" alt="Goan Fish Curry">
+            <p>Goan Fish Curry</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/prawn-malabari.jpg" alt="Prawn Malabari">
+            <p>Prawn Malabari</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/dal-makhani.jpg" alt="Dal Makhani">
+            <p>Dal Makhani</p>
+          </div>
+          <div class="gallery-item">
+            <img src="images/vegetable-jalfrezi.jpg" alt="Vegetable Jalfrezi">
+            <p>Vegetable Jalfrezi</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>Nipun Maha Mudiyanselage | U1164161</p>
+      <p>Report Page can be accessed from <a href="report.html">here</a></p>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
-</html>
+</html></div>

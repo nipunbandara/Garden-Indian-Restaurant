@@ -1,0 +1,733 @@
+/* CSS styles */
+/* Common sections for all the pages */
+
+/* Header Styles */
+
+/* header topic */
+header h1 {
+    padding-top: 150px;
+    text-align: center;
+    color: #fdb478;
+    font-family: 'Trebuchet MS';
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+/* header banner image */
+header img {
+    width: 100%;
+    filter: brightness(70%);
+    opacity: 0.9;
+    object-fit: cover;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: filter 0.3s ease;
+    object-position: top;
+    position: fixed; 
+}
+
+/* custom header banner images */
+
+/* crop banner to display only center for lucn menu page benner */
+.lunch-menu-image{
+    object-position: center center;
+}
+
+/* chnage brightness of the banner for booking page banner */
+.booking-image{
+    object-position: top;
+    opacity: 0.8;
+    filter: brightness(40%);
+}
+/* crop and change brightness for gallery page banner*/
+.gallery-header-image{
+    object-position: center center;
+    opacity: 0.9;
+    filter: brightness(50%);
+   
+}
+/* change brightness for the report page banner */
+.report-header-image{
+    opacity: 0.9;
+    filter: brightness(20%);
+}
+
+/* Navigation Styles */
+
+/* nav tag styles with positions and color changes*/
+nav {
+    background-color: #5c3713;
+    opacity: 0.9;
+    padding: 10px 0;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 30;
+    padding: 10px;
+}
+/* Hamburger menu styling */
+
+/* hide the hamburger menu for larger screens */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 15px;
+
+}
+
+/* Hamburger icon size */
+.hamburger-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+}
+
+/* Hamburger icon lines */
+.hamburger-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+/* Hamburger icon lines position */
+.hamburger-icon span:nth-child(1) {
+    top: 0;
+}
+
+.hamburger-icon span:nth-child(2) {
+    top: 8px;
+}
+
+.hamburger-icon span:nth-child(3) {
+    top: 16px;
+}
+
+/* Navbar list styles with flexbox and color changes */
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0.9;
+    border-radius: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.nav-list a:hover {
+    color: #ec8830;
+}
+
+.nav-list a.active {
+    color: #e67e22;
+}
+
+
+/* Main Content Styles */
+/* body styles with font styles and background color changes */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* make main content scrollable and make space for nav bar and footer*/
+main {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 200px;
+    max-width: none; 
+    max-height: fit-content;
+    box-sizing: border-box;
+    z-index: 25;
+    margin-top: 250px;
+}
+
+/* Content div section with fixed width and spaces */
+.inside-main{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* h2 styles */
+h2 {
+    color: #8b0000;
+    border-bottom: 2px solid #ff9933;
+    padding-bottom: 10px;
+}
+
+/* paragraph spacing */
+p {
+    margin-bottom: 20px;
+}
+
+/* footer styles with color and position changes */
+footer {
+    background-color: #5c3713;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 25;
+}
+/* footer paragraph styless */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+/* footer anchor tag styles */
+footer a {
+    color: #ff9933;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Booking page custom styles */
+/* Form section size color*/
+.booking-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+/* label styles */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+/* input, select and textarea styles */
+.form-group input, .form-group select, .form-group textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+/* flex box styles for date options */
+.date-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.date-option {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+/* submit button color and size styles */
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Menu pages styles */
+
+/* Menu table section styles */
+.menu-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* Menu table header and content spacing */
+.menu-table th,
+.menu-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Menu table header background color and font styles */
+.menu-table thead th {
+    background-color: #8b4513;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Menu table content background color and font styles */
+.menu-table tbody th {
+    font-weight: bold;
+    color: #654321;
+}
+
+/* hover effect for table items */
+.menu-table tr:hover {
+    background-color: #f9f9f9;
+}
+  
+
+/* About page styles */
+
+/* hours and contct section styles with spacing and background color */
+.hours, .contact {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+
+/* hours and contact section header styles */
+.hours h3, .contact h3 {
+    margin-bottom: 1.5rem;
+    color: #7d3c00;
+}
+
+/* Opening hours table styles spacing and colors */
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-table th, 
+.hours-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #bebebe;
+    background-color: #f2e6d9;
+    text-align: center;
+}
+
+
+/* contact section anchor tag styles */
+.contact a {
+    color: #7d3c00;
+    text-decoration: none;
+}
+
+
+
+/* Takeaway Page styles */
+
+/* Customer info section spacing and colors*/
+#customer-info {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+/* customer info form spacing */
+.form-group {
+  margin-bottom: 15px;
+}
+/* customer info form input styles */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding-right: 0;
+}
+
+/* Menu page selection button section styles */
+.menu-nav { 
+    display: flex; 
+    justify-content: center; 
+    margin: 20px 0; 
+}
+/* button sizes and colors */
+.menu-nav button { 
+  padding: 10px 15px; 
+  margin: 0 5px; 
+  cursor: pointer; 
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.menu-nav button.active { 
+  background-color: #4CAF50; 
+  color: white; 
+}
+
+/* take away menu section styles hide and reappear styles*/
+.menu-section { 
+    display: none; 
+}
+.menu-section.active { 
+    display: block; 
+}
+
+/* Takeaway menu section styles */
+#takeaway-table { 
+    border-collapse: collapse; 
+    width: 80%; 
+    margin: 20px auto; 
+}
+
+/* take away table styles */
+#takeaway-table  th, td { 
+    padding: 8px; 
+    border: 1px solid #000; 
+}
+
+/* take away table header styles with colors and center changes*/
+#takeaway-table  th[colspan="4"] { 
+    text-align: center;   
+    background-color: #8b4513; 
+    color: white;
+}
+
+/* take away table content styles */
+#takeaway-table  th { 
+    text-align: left; 
+}
+#takeaway-table td:nth-child(3) { 
+    text-align: right; 
+}
+
+/* take away table quantity input styles*/
+.quantity-input { 
+    width: 50px; 
+    text-align: center; 
+}
+
+/* order summary section styles */
+#order-summary {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 80%;
+}
+/* submit button size and colors */
+#submit-order {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* previous order selction section styles */
+#previous-order-select {
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+}
+/* previous order button styles */
+#load-order-btn, #clear-orders-btn {
+    margin-right: 10px;
+    padding: 8px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#clear-orders-btn {
+    background: #f44336;
+}
+
+
+/* Error message styles */
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* error message styles */
+.error-message {
+    color: #d44e3f;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+/* make error input border red */
+.form-label-input input.error,
+.form-label-input select.error {
+    border-color: #d44d3e;
+}
+
+
+
+/* Galley page stykles */
+
+/* Gallery item section styles with flex and centre and spacing*/
+.gallery-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+}
+
+/* gallery item box styles with spacing and colors */
+.gallery-item {
+    width: 350px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* gallery item image styles with height and width changes */
+.gallery-item img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+/* gallery item text styles with spacing and colors */
+.gallery-item p {
+    padding: 10px;
+    margin: 0;
+    font-weight: bold;
+    color: #ab6c45;
+}
+
+/* Responsive screen styles */
+@media screen and (max-width: 1050px) {
+    /* adjust nav list spacing  */
+    .nav-list a {
+        padding: 15px 5px;
+    }
+    
+
+    /* takeaway menu page */
+    /* make table, order summary and customer info section bit bigger from 80 to 90*/
+    #takeaway-table {
+        width: 90%;
+    }
+    #order-summary {
+        width: 90%;
+    }
+    #customer-info {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 900px) {
+    /* header topic size and spacing */
+    header h1 {
+        padding-top: 300px;
+        transform: translateY(-50%);
+        font-size: 2rem;
+    }
+
+    /* main content sexrion spacing */
+    .inside-main {
+        margin-top: -150px; 
+    }
+
+    /* display hamburger icon */
+    .hamburger-menu {
+        display: block;
+    }
+
+    /* chnage nav list position and colors*/
+    .nav-list {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #3a1f04;
+        transition: 0.3s ease;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        
+    }
+
+    /* nav list position when active */
+    .nav-list.active {
+        right: -15px;
+    }
+
+    /* nav list spacing */
+    .nav-list li {
+        margin: 15px 0;
+    }
+
+    /* hamburger icon reshape to a cross after clicking on the hamburger */
+    .hamburger-icon.active span:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    /* hide middle line */
+    .hamburger-icon.active span:nth-child(2) {
+        display: none;
+    }
+
+    /* change last line to cross */
+    .hamburger-icon.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    /* takeaway menu page spacing*/
+    .menu-nav {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    /* menu nav button styles */
+    .menu-nav button {
+        padding: 8px 10px;
+        font-size: 14px;
+        /* Three buttons per row */
+        flex: 1 0 calc(33.33% - 10px); 
+        min-width: initial;
+        margin: 0;
+    }
+    /* Enable horizontal scrolling for the table section*/
+    .menu-section {
+      overflow-x: auto; 
+    }
+    /* make the table bit bigger with min width to prevent too small */
+    #takeaway-table {
+      width: 100%;
+      min-width: 200px;
+    }
+    
+    /* table spacing */
+    #takeaway-table th, td {
+      padding: 6px 4px;
+      font-size: 14px;
+    }
+
+    /* order summary and customer info section size and spacing */
+    #order-summary {
+      width: 100%;
+      padding: 5px;
+    }
+    #customer-info {
+      width: 100%;
+      padding: 5px;
+    }
+
+    /* customer info form input length reduction */
+    .form-group input {
+      width: 98%;
+    }
+  }
+
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+
+    /* text size changes */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    /* footer spacing and font size */
+    footer {
+        padding: 5px 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    /* takeaway menu page */
+    /* MEnu nav selection button spacing */
+    .menu-nav button {
+        /* Two buttons per row */
+        flex: 1 0 calc(50% - 8px);
+        padding: 10px 8px;
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+
+    /* table spacing and font size */
+    #takeaway-table th, td {
+        padding: 4px 3px;
+        font-size: 13px;
+    }
+    /* quantity input spacing */
+    .quantity-input {
+        padding: 2px;
+    }
+
+
+    /* gallery page image resize to a smaller size*/
+    .gallery-item img {
+        height: 200px;
+    }
+}
+
